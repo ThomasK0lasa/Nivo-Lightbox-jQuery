@@ -1,5 +1,5 @@
 /*
- * Nivo Lightbox v1.3.1
+ * Nivo Lightbox v1.4.0
  * http://dev7studios.com/nivo-lightbox
  *
  * Copyright 2013, Dev7studios
@@ -190,7 +190,7 @@
 					if(this.complete) $(this).load();
 				});
 
-				img.error(function() {
+				img.on('error', function() {
 					var wrap = $('<div class="nivo-lightbox-error"><p>'+ $this.options.errorMessage +'</p></div>');
                     content.html(wrap).removeClass('nivo-lightbox-loading');
 				});
